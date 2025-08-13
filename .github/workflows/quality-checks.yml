@@ -17,8 +17,8 @@ jobs:
         with:
           databricks-host: ${{ secrets.DATABRICKS_HOST }}
           databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
-          workspace-path: /Users/traininguser5@sudosu.ai/test_casestudy
-          cluster-id: ${{ secrets.DATABRICKS_CLUSTER_ID }}
+          notebook-path: /Workspace/Users/traininguser5@sudosu.ai/test_casestudy
+          existing-cluster-id: ${{ secrets.DATABRICKS_CLUSTER_ID }}
 
       - name: Download Deequ Report (if failed)
         if: failure()
